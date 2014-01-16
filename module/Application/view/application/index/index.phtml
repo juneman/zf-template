@@ -1,0 +1,197 @@
+<?php echo $this->navigation; ?>
+
+<div class="container-fluid span11 offset1 page-container">
+	<div class="row-fluid">
+		<div class="span3">
+		
+<?php if ($this->identity == null) : ?>
+			<div class="home-container-title">IMPORTANT WORDS</div>
+<?php else : ?>
+			<div class="home-container-title">MY NEW WORDS</div>
+<?php endif;?>
+			<div class="home-container-content home-container-words-content">
+				<div class="hcc-new-words-list">
+					<ul class="unstyled">
+<?php if($this->words_list != null && count($this->words_list) > 0) : ?>
+						<?php foreach($this->words_list as $w ) : ?>
+						<li class="hcc-new-words-item">
+							<div class="hcc-new-words-item-head">
+							<a target="_blank" href="<?php echo $this->url('dict', array('action' => 'search', 'word' => $w[word])); ?>"><?php echo $w[word]; ?></a>
+							<span><?php echo $w["value"]->a_pr; ?></span>
+							</div>
+							<div class="hcc-new-words-item-zh">
+							<span><?php echo $w["value"]->sm; ?></span> 
+							</div>
+						</li>
+						<?php endforeach;?>
+
+<?php else : ?>
+						<li class="hcc-new-words-item">
+							<div class="hcc-new-words-item-head">
+							<a href="/dict/search/welcome">Welcome</a>
+							<span>[welkəm] </span>
+							</div>
+							<div class="hcc-new-words-item-zh">
+							<span>n.欢迎,不客气</span> 
+							</div>
+						</li>
+						<li class="hcc-new-words-item">
+							<div class="hcc-new-words-item-head">
+							<a href="/dict/search/welcome">ultimatum</a>
+							<span>[ˌʌltɪˈmeɪtəm] </span>
+							</div>
+							<div class="hcc-new-words-item-zh">
+							<span>n. 最后通牒</span> 
+							</div>
+						</li>
+						<li class="hcc-new-words-item">
+							<div class="hcc-new-words-item-head">
+							<a href="#">incumbent</a>
+							<span>[ɪnˈkʌmbənt]</span>
+							</div>
+							<div class="hcc-new-words-item-zh">
+							<span>adj. 有责任的；有义务的</span> 
+							</div>
+						</li>
+<?php endif; ?>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="span5">
+			<div class="home-container-title">RECOMMENDED READING</div>
+			<div class="home-container-content home-container-reading-content">
+				<div class="hcc-wrap">
+					<div class="hcc-recommend-news-title" id="home-recommend-article-title">
+						<a href="<?php echo $this->url('article', array('action' => 'read', 'url' => $this->article->url)); ?>" target="_blank">
+						<?php echo $this->article->title; ?>
+						</a>
+	
+					</div>
+					<div class="hcc-recommend-news-content" id="home-recommend-article-content">
+						<p>
+							<?php echo $this->article->summary; ?>&nbsp;...	
+						<span class="article-from"><a href="<?php echo $this->article->from_url; ?>" target="_blank">
+							<em><small>
+								<?php echo $this->article->author; ?>
+							</small>
+							</em></a></span> 
+						</p>
+						</div>
+					<div class="hcc-recommend-news-import-words">
+						<div><p>
+							<strong>
+								IMPORTANT WORDS:
+							</strong>
+							</p>
+						</div>
+						<ul class="unstyled">
+						<li class="hcc-recommend-news-import-words-item">
+							<div class="hcc-recommend-news-import-words-item-head">
+							<a href="#">Welcome</a>
+							<span>[welkəm] </span>
+							<span>n.欢迎,不客气</span> 
+							</div>
+						</li>
+						<li class="hcc-recommend-news-import-words-item">
+							<div class="hcc-recommend-news-import-words-item-head">
+							<a href="#">ultimatum</a>
+							<span>[ˌʌltɪˈmeɪtəm] </span>
+							<span>n. 最后通牒</span> 
+							</div>
+						</li>
+						<li class="hcc-recommend-news-import-words-item">
+							<div class="hcc-recommend-news-import-words-item-head">
+							<a href="#">incumbent</a>
+							<span>[ɪnˈkʌmbənt]</span>
+							<span>adj. 有责任的；有义务的</span> 
+							</div>
+						</li>
+						<li class="hcc-recommend-news-import-words-item">
+							<div class="hcc-recommend-news-import-words-item-head">
+							<a href="#">incumbent</a>
+							<span>[ɪnˈkʌmbənt]</span>
+							<span>adj. 有责任的；有义务的</span> 
+							</div>
+						</li>
+					</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="span2">
+			<div class="home-container-title">CLASSIC BOOKS</div>
+			<div class="home-container-books-list">
+				<ul class="unstyled">
+					<li class="home-container-book-item hcb-book-reading">
+						<div class="hcb-item-title">Reading:</div>
+						<div class="hcb-item-content">
+							<span>Pride and Prejudice</span><br>
+							<span><small>傲慢与偏见</small> </span>
+						</div>
+						<button class="btn btn-primary btn-link">Continue!</button>
+					</li>
+					<li class="home-container-book-item hcb-book-reading">
+						<div class="hcb-item-title">Reading:</div>
+						<div class="hcb-item-content">
+							<span>Pride and Prejudice</span><br>
+							<span><small>傲慢与偏见</small> </span>
+						</div>
+						<button class="btn btn-primary btn-link">Continue!</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+<script src="/assets/js/jquery-1.10.1.min.js"></script>
+<script >
+
+function load_ar() 
+{
+	var data = {
+		'page': '0',
+		'limit':'1'
+	}
+
+	$.post('/rsystem/recommend', data, function(rsp){
+			if (rsp.code == 'ok')
+			{
+				var obj = rsp['0'];
+				var htmlCode=' <a href=\"/article/read/' + obj.url +'\" ' +  'target=\"_blank\">'
+				              + obj.title + '</a>';
+			
+				$("#home-recommend-article-title").html(htmlCode);
+				
+				var htmlCode2 = '<p>' + obj.summary 
+								+ '&nbsp;...<span class=\"article-from\"><a href=\"'
+								+ obj.from_url 
+								+ '\" target=\"_blank\"><em><small>'
+				        + obj.author
+				        + '</small></em></a></span></p>';
+
+				$("#home-recommend-article-content").html(htmlCode2);
+
+			}
+
+
+
+	}, 'json')
+	.done(function() {})
+	.fail(function() { alert("error"); })
+	.always(function() {  });
+
+
+}
+
+$(document).ready(function()
+		{
+			load_ar();
+		}
+		);
+
+
+</script>

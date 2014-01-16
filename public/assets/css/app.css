@@ -1,0 +1,18 @@
+/*
+ * 
+ */
+div.content-area span {
+	cursor: pointer;
+}
+
+div#rd-tool-side-dics {
+	display: none;
+}
+
+div#rd-tool-side-dics #rd-tool-side-dics-wd {
+	-webkit-border-bottom: 1px solid #ddd;
+	-moz-border-bottom: 1px solid #ddd;
+	-ms-border-bottom: 1px solid #ddd;
+	-o-border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}

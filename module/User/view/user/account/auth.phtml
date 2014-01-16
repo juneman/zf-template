@@ -1,0 +1,98 @@
+<div class="page">
+	<div class="content-wrap">
+		<div>
+			<span>Why is KidKid?</span>
+		</div>
+		<div>
+			<ul>
+				<li>
+					Reading is a very good way to learn new words.
+				</li>
+				<li>
+					Daily recommendation
+				</li>
+				<li>
+					A large number of articles
+				</li>
+				<li>
+					Simple and effective.
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="form-container">
+		<div class="form-wrap">
+		<?php if ($this->section == "login" ) : ?>
+			<form action="/account/auth/login" method="post" class="form-login" AUTOCOMPLETE="OFF">
+		<?php else : ?>
+			<form action="/account/auth/login" method="post" class="form-login" style="display:none;" AUTOCOMPLETE="OFF">
+		<?php endif; ?>
+				<div class="wrap-head">
+					<span class="login-head">Log in</span><span class="signup-head" id="switch_to_signup">Sign up</span>
+				</div>
+				<div class="splite-line"></div>
+			<?php if ($this->login_error_msg != null) : ?>	
+				<div id="login-error-msg"><?php echo $this->login_error_msg; ?> </div>
+			<?php endif; ?>
+				<div class="login-box">
+					<input name="login_email" type="email" required="required" placeholder="Email">
+					</input>
+					<input name="login_passwd"  type="password" required="required" pattern="[0-9a-zA-Z~!@#$%_-]{6,32}"
+					placeholder="Password: a~z, A~Z, 0~9, ~!@#$%_- ">
+					</input>
+					<div class="login-btn-grp">
+						<input type="submit" value="Log in" id="alogin-btn">
+						</input>
+					</div>
+					<div class="forgot-passwd-tips">
+						<a href="#">Forgot your password?</a>
+					</div>
+				</div>
+
+				<div class="splite-line"></div>
+					<div class="social-account">
+						<a href="#">Weibo</a>
+						<a href="#">QQ</a>
+				</div>
+
+			</form>
+			
+		<?php if ($this->section == "signup" ) : ?>
+			<form action="/account/auth/signup" method="post"  class="form-signup" AUTOCOMPLETE="OFF">
+		<?php else : ?>
+			<form action="/account/auth/signup" method="post"  class="form-signup" style="display:none" AUTOCOMPLETE="OFF">
+		<?php endif; ?>
+				<div class="wrap-head">
+					<span class="signup-head">Sign up</span><span class="login-head" id="switch_to_login">Log in</span>
+				</div>
+				<div class="splite-line"></div>
+			<?php if ($this->signup_error_msg != null) : ?>	
+				<div id="signup-error-msg"><?php echo $this->signup_error_msg; ?> </div>
+			<?php endif; ?>
+				<div class="signup-box">
+					<input name="sign_email" type="email" required="required" placeholder="Email">
+					</input>
+					<input name="sign_passwd"  type="password" required="required" pattern="[0-9a-zA-Z~!@#$%_-]{6,32}"
+					placeholder="Password: a~z, A~Z, 0~9, ~!@#$%_- ">
+					</input>
+					<input name="confirm_passwd"  type="password" required="required" placeholder="Confirm Password">
+					</input>
+					<div class="signup-btn-grp">
+						<input type="submit" value="Sign up" id="asignup-btn">
+						</input>
+					</div>
+				</div>
+
+				<div class="splite-line"></div>
+					<div class="social-account">
+						<a href="#">Weibo</a>
+						<a href="#">QQ</a>
+				</div>
+
+			</form>
+
+		</div>
+	</div>
+
+</div>

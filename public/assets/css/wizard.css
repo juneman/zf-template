@@ -1,0 +1,149 @@
+body {
+	background-color: #F5F5F5;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+a {
+color: #3b73af;
+			 text-decoration: none;
+}
+
+a:hover {
+		text-decoration: underline;
+	}
+
+.splite-line {
+	border-bottom: 1px solid #ccc;
+}
+
+div.page-footer {
+margin: 0 auto 10px;
+width: 200px;
+}
+
+div.page {
+width: 100%;
+			 margin-top: 100px;
+			 margin-bottom: 100px;
+}
+
+div.content-wrap {
+width: 50%;
+margin: 0 auto 0px;
+padding: 15px;
+				 padding-left: 30px;
+border: 1px solid #ccc;
+background: #fff;
+}
+
+div.content-head {
+padding: 15px;
+				 margin-bottom:10px;
+
+color: #468847;
+			 background-color: #dff0d8;
+			 border-color: #d6e9c6;
+			 font-size: 20px;
+}
+
+div.content-head strong {
+	font-size: 24px;
+}
+
+div.content-area {
+	padding-top: 15px;
+}
+
+div.content-area ul {
+	list-style: none;
+}
+
+div.content-area input[type=text] {
+display: inline;
+border: 1px #ccc solid;
+width: 30%;
+padding: 1px 1px 1px 5px;
+				 background-color: #fff;
+outline: 1;
+				 min-height: 20px;
+position: relative;
+					margin-bottom: 10px;
+color: #005580;
+}
+
+strong.step-head {
+	font-size: 18px;
+	font-weight: 800;
+color: #009ad9;
+}
+
+label.step-title {
+	padding-right: 10px;
+	padding-left: 20px;
+	font-weight: 800;
+	font-size: 14px;
+}
+
+div.vocabulary-select-area {
+	padding-left: 80px;
+	padding-top: 20px;
+}
+
+div.vocabulary-select-area  span {
+	padding-right: 10px;
+}
+
+div.vocabulary-select-area  span input[type="radio"] {
+margin: 4px 0 0;
+				margin-top: 1px \9;
+				*margin-top: 0;
+				line-height: normal;
+}
+
+div.vocabulary-select-area label.radio {
+cursor: pointer;
+}
+
+div.vocabulary-select-area label:hover {
+color: #0088cc;
+}
+
+div.vocabulary-select-area  span  input[type="radio"]:focus {
+outline: thin dotted #333;
+outline: 5px auto -webkit-focus-ring-color;
+				 outline-offset: -2px;
+}
+
+div.action-btn {
+	padding-top:10px;
+	padding-bottom: 20px;
+margin: 0 auto 1px;
+width: 60%;
+			 margin-bottom: 30px;
+}
+
+div.action-btn input[type="submit"] {
+border: 1px #0088cc solid;
+				min-height: 32px;
+				min-width: 220px;
+position: relative;
+					background-color: #009ad9;
+color: #FFF;
+			 font-size: 18px;
+			 font-weight: 400;
+width: 100%;
+float: right;
+}
+
+div.action-btn input[type="submit"]:hover {
+cursor: pointer;
+border: 1px #ccc solid;
+color: #005580;
+}
+div.action-btn input[type="submit"]:active {
+color: #FFF;
+border: 1px #0088cc solid;
+}
+

@@ -1,0 +1,99 @@
+		<style type="text/css">
+			/***/
+			div.content-wrap {
+				margin-left: 30px;
+				float: left;
+			}
+
+			div.setting-wrap {
+				margin-top: 70px;
+				padding-left: 50px;
+				min-width: 300px;
+				width: 300px;
+			}
+
+			div.setting-pane {
+				margin-bottom: 20px;
+			}
+
+			div.caf-label-head {
+				padding-bottom: 5px;
+			}
+
+			div.caf-content-area {
+
+			}
+
+		</style>
+		<div class="left-side-menu-bar">
+				<div class="left-side-menu-head">
+					<a href="/">CAFRead</a>
+				</div>
+				<div class="splite-line"></div>
+				<div class="left-side-menus">
+					<div class="side-menu active">
+						<a>个人档案配置</a>
+					</div>
+					<div class="side-menu">
+						<a href="/rsconfig">推荐系统配置</a>
+					</div>
+
+					<div class="side-menu">
+						<a href="#">单词记忆统计</a>
+					</div>
+
+					<div class="side-menu">
+						<a href="#">阅读文章统计</a>
+					</div>
+					<div class="splite-line" style="margin-top:10px; margin-bottom:10px;"></div>
+					<div class="side-menu">
+						<a href="/">返回首页</a>
+					</div>
+					<div class="side-menu">
+						<a href="/account/logout">退出</a>
+					</div>
+				</div>
+		</div>
+
+		<div class="container-wrap">
+				<div class="setting-wrap">
+					<div class="setting-pane">
+						<div class="caf-label-head">
+							My nick name:
+						</div>
+						<div class="caf-content-area">
+							<input type="text" id="my-nick-name" value="<?php echo $this->identity->nick_name; ?>"/>
+						</div>
+					</div>
+
+					<div class="setting-pane">
+						<div class="caf-label-head">
+							My log in email:
+						</div>
+						<div class="caf-content-area">
+							<input type="text" readonly="readonly" value="<?php echo $this->identity->login_email; ?>"/>
+						</div>
+					</div>
+
+					<div class="setting-pane">
+						<div class="caf-label-head">
+							Change my log in password:
+						</div>
+						<div class="caf-content-area">
+							<input type="password" value="" id="change-old-passwd" placeholder="Type your old password"/>
+							<input type="password" value="" id="change-new-passwd" placeholder="Type your new password"/>
+							<input type="password" value="" id="change-confirm-passwd" placeholder="Confirm your new password"/>
+						</div>
+					</div>
+				 	
+					<div class="setting-pane">
+						<input type="submit" value="Submit" id="save-profile-btn" />
+					</div>
+
+					<div class="setting-pane">
+						<a href="#">Forgot password?</a>
+					</div>
+					
+				</div>
+			</div>
+	

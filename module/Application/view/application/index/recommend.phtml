@@ -1,0 +1,26 @@
+<?php
+$code = $this->code;
+
+if ($code['code'] == 'no')
+{
+	$json = json_encode($code);
+	echo $json;
+}
+else
+{
+	$index = 0;
+	$stat_ids = array();
+	foreach ($code['result'] as $row  )
+	{
+		$stat_ids["$index"] = $row;
+		$index = $index +1;
+	}
+
+	$stat_ids['nums'] = $index;
+	$stat_ids['code'] = 'ok';
+
+	$json = json_encode($stat_ids);
+	echo $json;
+}
+
+?>

@@ -1,0 +1,56 @@
+<div class="content-wrap">
+	<div class="content-head">
+		<?php if ($this->code == 'again') : ?>
+			<strong>Congratulations!</strong>
+				&nbsp;&nbsp;Please complete the following form!
+		<?php else : ?>
+			<strong>
+				Please complete the following steps!</strong>
+		<?php endif; ?>
+	</div>
+	<div class="splite-line"></div>
+
+	<form action="/wizard" method="post" autocomplete="OFF" >
+	<div class="content-area">
+		<ul>
+			<li>
+				<div class="nick-name-area">
+					<strong class="step-head">Step 1</strong>
+					<label  class="step-title"> Your nick name:
+						<input type="text" name="nick_name" required="required"  pattern="[a-zA-Z][0-9a-zA-Z]{6,32}" />
+					</label>	
+				</div>
+			</li>
+			<li>
+				<div class="vocabulary-area">
+					<strong  class="step-head">Step 2</strong>
+					<label class="step-title">Choose your vocabulary</label>
+					<div class="vocabulary-select-area">
+						<span> <label class="radio">
+										<input type="radio" name="vocabulary" value="1" checked="checked" />
+											CET-4</label> </span>
+						<span> <label class="radio">
+										<input type="radio" name="vocabulary" value="2" />
+											CET-6</label> </span>
+						<span> <label class="radio">
+										<input type="radio" name="vocabulary" value="3" />
+											考研英语</label> </span>
+						<span> <label class="radio">
+										<input type="radio" name="vocabulary" value="4" />
+											GRE</label> </span>
+						<span> <label class="radio">
+										<input type="radio" name="vocabulary" value="5" />
+											TOEFL</label> </span>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+	<div class="action-btn">
+		<input type="submit" value="OK" />
+	</div>
+	</form>
+
+</div>
+

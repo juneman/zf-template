@@ -1,0 +1,310 @@
+div.top-nav-bar {
+	padding-top: 5px;
+	margin-bottom: 10px;
+}
+
+div.top-nav-bar ul {
+	display: block;
+	color: #777;
+}
+
+div.top-nav-bar ul li {
+	float: left;
+	margin-right: 25px;
+	padding-left: 5px;
+	color: #777;
+}
+
+div.top-nav-bar ul li.active a {
+	color: #005580;
+}
+
+div.top-nav-bar ul li a {
+	color: #777;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 16px;
+	font-weight: 200;
+}
+
+div.top-nav-bar ul li a:hover, div.top-bar-opt ul li a:hover {
+	color: #005580;
+}
+
+div.top-bar-opt {
+	margin-top: 0px;
+}
+
+div.top-bar-opt ul li {
+	float: left;
+	padding-left: 10px;
+}
+
+div.top-bar-opt ul li a {
+	color: #777;
+}
+
+div.top_splite-bar {
+	-webkit-border-bottom: 1px solid #f0f0f0;
+	-moz-border-bottom: 1px solid #f0f0f0;
+	-ms-border-bottom: 1px solid #f0f0f0;
+	-o-border-bottom: 1px solid #f0f0f0;
+	border-bottom: 1px solid #f0f0f0;
+
+	max-width: 60%;
+	max-width: 700px;
+	min-width: 50%;
+	min-width: 600px;
+	
+	margin-top:10px;
+}
+
+div.every-day-english-bar {
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	-ms-border-radius: 0px;
+	-o-border-radius: 0px;
+	border-radius: 0px;
+
+	max-width: 60%;
+	max-width: 700px;
+	min-width: 50%;
+	min-width: 600px;
+	
+	margin-top:10px;
+}
+
+div.page-container {
+	margin-top: 40px;
+	margin-bottom: 200px;
+}
+
+div.home-container-title {
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 15px;
+	width: 100%;
+	overflow: hidden;
+	height: 20px;
+}
+
+div.home-container-words-content,
+div.home-container-reading-content {
+/*	background-color: #f0f0f0;
+*/
+
+	height: 300px;
+
+	background-color: #dff0d8;
+	border-color: #d6e9c6;
+
+/*
+background-color: #d9edf7;
+border-color: #bce8f1;
+*/
+
+}
+
+div.hcc-new-words-list
+{
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+li.hcc-new-words-item {
+	padding-top: 10px;
+}
+
+li.hcc-new-words-item a {
+	padding-right: 10px;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+div.hcc-new-words-item-zh {
+	padding-left:50px;
+	font-family: Microsoft YaHei,宋体;
+}
+
+div.hcc-wrap {
+	padding-top: 30px;
+	padding-left:20px;
+}
+
+div.hcc-recommend-news-title a {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+div.hcc-recommend-news-content {
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+div.hcc-recommend-news-content p a {
+	float: right;
+	color: #777;
+	padding-right:20px;
+}
+
+div.home-container-books-list .hcb-book-reading {
+	background-color: #149BDF;
+}
+
+div.home-container-books-list .home-container-book-item {
+	padding-left: 10px;
+	margin-bottom: 20px;
+}
+
+div.home-container-books-list .hcb-item-title {
+	font-size: 16px;
+	font-weight: 600;
+	color: #F0F0F0;
+	padding-top:10px;
+}
+
+ul.articles-list {
+	margin-left: 0;
+  list-style: none;
+}
+
+div.article-section .article-title {
+}
+
+div.article-section h4 {
+	margin-bottom: 5px;
+}
+
+div.article-section h6 {
+	margin: 0;
+	padding:0px;
+}
+
+div.article-section .article-summary {
+	margin: 0;
+	padding-bottom:0px;
+}
+
+div.articles-list-operate span.active {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+div.articles-list-operate span.inactive {
+	margin-left:10px;
+	padding-left:10px;
+	padding-right:10px;
+
+	font-size: 16px;
+	font-weight: 100;
+	background-color: #0088CC;
+	color: #FFFFFF;
+}
+
+div.articles-list-operate a:hover {
+	text-decoration:none
+}
+
+.article-summary-textarea {
+	height: 100px;
+	text-align: left;
+	cursor: text;
+	font-size: 15px;
+	color: #003366;
+	line-height: 20px;
+	font-family: Arial;
+	*overflow-y: hidden;
+}
+
+.article-editor-textarea {
+	height: 300px;
+	text-align: left;
+	cursor: text;
+	font-size: 15px;
+	color: #003366;
+	line-height: 20px;
+	font-family: Arial;
+	*overflow-y: hidden;
+}
+
+/*
+	  * 
+		 */
+div.reading-tool .content-title {
+		text-align: center;
+}
+
+div.content-area {
+	font-size: 16px;
+}
+
+div.completed-action-btns button.btn-link {
+		color: #999999;
+}
+
+div#CAFR-BOOKMARKLET
+{
+	margin-top:10px;
+	margin-left:10px;
+}
+
+div.caf-bookmarklet-wrap
+{
+	-webkit-border: 1px solid black;
+	-moz-border: 1px solid black;
+	-ms-border: 1px solid black;
+	-o-border: 1px solid black;
+	border: 1px solid black;
+	
+	background-color: white;
+
+	padding: 20px;
+	padding-top:10px;
+}
+
+div.caf-bookmarklet-wrap dt.caf-bm-mini-dict-head {
+	padding-bottom:2px;
+	-webkit-border-bottom: 1px solid #e3e3e3;
+	-moz-border-bottom: 1px solid #e3e3e3;
+	-ms-border-bottom: 1px solid #e3e3e3;
+	-o-border-bottom: 1px solid #e3e3e3;
+	border-bottom: 1px solid #e3e3e3;
+}
+
+div.caf-bookmarklet-wrap dt.caf-bm-mini-dict-head span.caf-bm-word {
+	font-size:16px;
+	font-weight: 600;
+}
+
+div.caf-bookmarklet-wrap dt.caf-bm-mini-dict-head input.disable {
+	color: #999999;
+	cursor: default;
+	text-decoration: none;
+}
+
+div.caf-bookmarklet-wrap dd.caf-bm-wd-pr,
+div.caf-bookmarklet-wrap dd.caf-bm-wd-sm {
+	font-size:12px;
+	font-weight: 200;
+	padding-top:5px;
+}
+
+
+div#CAFR-ADD-NEW-WORD-TIPS
+{
+	font-size:16px;
+	font-weight: 400;
+	-webkit-border: 1px solid black;
+	-moz-border: 1px solid black;
+	-ms-border: 1px solid black;
+	-o-border: 1px solid black;
+	border: 1px solid black;
+
+	background-color: white;
+}
+
+button#rt-close-wnd-btn {
+}
+
+
+
+

@@ -1,0 +1,117 @@
+<?php if($this->method == 'post' ) : ?>
+
+<?php 
+$json = json_encode($this->code);
+echo $json;
+
+?>
+
+<?php else : ?>
+
+		<style type="text/css">
+			ul.unstyled {
+				list-style: none;
+			}
+
+			ul.voca-select {
+				margin: 0;
+				display: inline-block;
+			}
+
+			ul.voca-select li {
+				float: left;
+				padding: 10px;
+				background-color: #D9EDF7;
+				padding: 10px;
+				margin: 10px;
+				color: #000000;
+				cursor: default;
+			}
+
+			ul.voca-select li.active {
+				color: white;
+				background-color: #0088cc;
+			}
+
+			ul.voca-select li:hover {
+				background-color: #0088cc;
+				color: white;
+			}
+			
+			select#acticles-count {
+				margin-top: 10px;
+				margin-left: 30px;
+				margin-bottom: 20px;
+			}
+			
+		</style>
+
+		<div class="left-side-menu-bar">
+				<div class="left-side-menu-head">
+					<a href="/">CAFRead</a>
+				</div>
+				<div class="splite-line"></div>
+
+				<div class="left-side-menus">
+					<div class="side-menu">
+						<a href="/profile">个人档案配置</a>
+					</div>
+					<div class="side-menu active">
+						<a>推荐系统配置</a>
+					</div>
+
+					<div class="side-menu">
+						<a href="#">单词记忆统计</a>
+					</div>
+
+					<div class="side-menu">
+						<a href="#">阅读文章统计</a>
+					</div>
+					<div class="splite-line" style="margin-top:10px; margin-bottom:10px;"></div>
+					<div class="side-menu">
+						<a href="/">返回首页</a>
+					</div>
+					
+					<div class="side-menu">
+            <a href="/account/logout">退出</a>
+          </div>
+				</div>
+			</div>
+
+			<div class="container-wrap">
+				<div class="setting-wrap">
+					<div class="setting-pane">
+						<div class="caf-label-head">
+							Choose vocabulary you want to learn
+						</div>
+						<div class="splite-line"></div>
+						<div class="caf-content-area">
+							<input type="hidden" value="<?php echo $this->vocabulary; ?>" id="which-vocabulary"/>
+							<ul class="unstyled voca-select">
+								<?php 
+									$labels = array('','CET-4', 'CET-6', '考研英语', 'GRE', 'TOEFL');
+									for ($i=1; $i <= 5; $i++)
+									{
+										$klazz = "";
+										if ($this->vocabulary == $i) {
+											$klazz = "active";	
+										}else {$klazz = "";}
+
+										echo "<li id='$i' class='$klazz' >$labels[$i]</li> ";
+									}
+								?>
+							</ul>
+							<div id="show-message"></div>
+						</div>
+					</div>
+					<div class="splite-line" style="margin-bottom:20px;"></div>
+					<div class="setting-pane">
+						<input type="submit" value="Submit" id="save-vocabulary-btn" />
+					</div>
+
+				</div>
+			</div>
+
+<?php endif; ?>
+
+

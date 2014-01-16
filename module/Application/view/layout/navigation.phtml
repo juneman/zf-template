@@ -1,0 +1,87 @@
+
+<div class="container-fluid span12">
+	<div class="row-fluid">
+		<div class="top-nav-bar span6 offset1">
+			<div>
+				<ul class="unstyled">
+				<?php if ($this->section == "home") : ?>
+					<li class="active">
+				<?php else :?>
+					<li >
+				<?php endif;?>
+						<a href="/">HOME</a>
+					</li>
+
+				<?php if ($this->section == "articles") : ?>
+					<li class="active">
+				<?php else :?>
+					<li >
+				<?php endif;?>
+						<a href="/article">ARTICLES</a>
+					</li>
+
+				<?php if ($this->section == "books") : ?>
+					<li class="active">
+				<?php else :?>
+					<li >
+				<?php endif;?>
+						<a href="/books">BOOKS</a>
+					</li>
+
+				<?php if ($this->section == "words") : ?>
+					<li class="active">
+				<?php else :?>
+					<li >
+				<?php endif;?>
+						<a href="/words">WORDS</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="pull-left offset1">
+<!--
+		<?php if ($this->section == "home") :?>
+			<div class="alert alert-success every-day-english-bar">
+				<strong>Every Day English:&nbsp;&nbsp;&nbsp;&nbsp;</strong>
+				Action speak louder than words.
+			</div>
+		<?php else :?>
+			<div class="top_splite-bar">
+			</div>
+		<? endif; ?>
+	-->
+			<div class="top_splite-bar">
+			</div>
+<!--			<input type="search" class="input-xxlarge"/>
+			<button class="btn" type="button">
+				<i class="icon-search"></i>
+			</button>
+-->
+		</div>
+				
+		<div class="pull-right top-bar-opt">
+		<?php if($this->identity == null) : ?>
+			<ul class="unstyled">
+				<li>
+					<a href="/">SIGN UP</a>
+				</li>
+				<li>
+					<a href="/account/login">LOG IN</a>
+				</li>
+			</ul>
+		<?php else : ?>
+			<ul class="unstyled">
+				<li>
+					<a href="/profile"><?php echo $this->identity->nick_name; ?></a>&nbsp;&nbsp;&nbsp;<a href="/account/logout">Log out</a>
+				</li>
+			</ul>
+		<?php endif; ?>
+
+		</div>
+
+
+	</div>
+</div>
